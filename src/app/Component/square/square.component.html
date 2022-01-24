@@ -2,7 +2,7 @@
 <br>
 <div class="menu">
     <div>
-        <input class="form-control-sm" (ngModelChange)="onChange()" [(ngModel)]="A" type="number" min="1">
+        <input class="form-control-sm" (change)="onChange()" [(ngModel)]="A" type="number" min="1">
         <label>cm</label>
         <br>
         <Label>Area: {{area}}</Label>
