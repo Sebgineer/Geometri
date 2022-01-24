@@ -1,0 +1,12 @@
+<div [ngStyle]="{'height.px': A, 'width.px': A}" class="square"></div>
+<br>
+<div class="menu">
+    <div>
+        <input class="form-control-sm" (ngModelChange)="onChange()" [(ngModel)]="A" type="number" min="1">
+        <label>cm</label>
+        <br>
+        <Label>Area: {{area}}</Label>
+        <br>
+        <Label>Circumference: {{circumference}}</Label>
+    </div>
+</div>

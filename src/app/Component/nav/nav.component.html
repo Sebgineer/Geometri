@@ -1,0 +1,9 @@
+<div class="nav">
+    <select class="form-select-sm" [(ngModel)]="value">
+        <option value="Square" selected>Square</option>
+        <option value="Rect">Rectangle</option>
+    </select>
+</div>
+
+<app-square *ngIf="value == 'Square'"></app-square>
+<app-rectangle *ngIf="value == 'Rect'"></app-rectangle>
